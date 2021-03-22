@@ -31,10 +31,10 @@ class PrototypesController < ApplicationController
    end
 
    def update
-    if @prototype.update
+    if @prototype.update(prototype_params)
       redirect_to prototype_path(@prototype)
-    else 
-      render :edit 
+    else
+      render :edit
     end
    end
 
