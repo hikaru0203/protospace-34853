@@ -44801,3 +44801,1701 @@ Processing by PrototypesController#show as HTML
 Completed 200 OK in 65ms (Views: 43.6ms | ActiveRecord: 7.7ms | Allocations: 21893)
 
 
+Started GET "/" for ::1 at 2021-03-19 17:48:42 +0900
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/prototypes/index.html.erb:5
+  [1m[36mPrototype Load (0.5ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (1.9ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (1.9ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (7.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 10 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (2.7ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 242.5ms | Allocations: 40812)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 341.3ms | Allocations: 56948)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3486ms (Views: 3377.3ms | ActiveRecord: 60.1ms | Allocations: 1496423)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--81b1fdf98f5f90c4c76ce5de2609ca38ff43310e/town20191010173054.jpg" for ::1 at 2021-03-19 17:48:46 +0900
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c280b17b47ccce046f3967c4fb77ba8ca1115afc/town20191010173054.jpg" for ::1 at 2021-03-19 17:48:46 +0900
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75a4bf946c8be06a114923b0d18da18cf524389d/town20191010173054.jpg" for ::1 at 2021-03-19 17:48:46 +0900
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20752dd68201d4bb6d3cf0cba86221024f66e8c3/town20191010173054.jpg" for ::1 at 2021-03-19 17:48:46 +0900
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--17bd570180227329951bbb487d278df05ebf69af/logo.png" for ::1 at 2021-03-19 17:48:46 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (7.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ActiveStorage::BlobsController#show as JPEG
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--81b1fdf98f5f90c4c76ce5de2609ca38ff43310e", "filename"=>"town20191010173054"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c280b17b47ccce046f3967c4fb77ba8ca1115afc", "filename"=>"town20191010173054"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75a4bf946c8be06a114923b0d18da18cf524389d", "filename"=>"town20191010173054"}
+  [1m[36mActiveStorage::Blob Load (4.6ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20752dd68201d4bb6d3cf0cba86221024f66e8c3", "filename"=>"town20191010173054"}
+  [1m[36mActiveStorage::Blob Load (6.1ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 8 LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Load (3.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 7 LIMIT 1[0m
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--17bd570180227329951bbb487d278df05ebf69af", "filename"=>"logo"}
+  [1m[36mActiveStorage::Blob Load (9.0ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 9 LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Load (4.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (49.0ms) [0m[34mGenerated URL for file at key: 38doinp90mejoqcrnrv4neqn3i9t (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNemhrYjJsdWNEa3diV1ZxYjNGamNtNXlkalJ1WlhGdU0yazVkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjY2WiIsInB1ciI6ImJsb2Jfa2V5In19--6df8ac68e4f7fdd086a1dc1817addfe10f1f277e/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNemhrYjJsdWNEa3diV1ZxYjNGamNtNXlkalJ1WlhGdU0yazVkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjY2WiIsInB1ciI6ImJsb2Jfa2V5In19--6df8ac68e4f7fdd086a1dc1817addfe10f1f277e/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Completed 302 Found in 64ms (ActiveRecord: 4.6ms | Allocations: 16693)
+
+
+[36m  Disk Storage (47.9ms) [0m[34mGenerated URL for file at key: 7b3l3ax1gsewaf6ji97qf7svmm38 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMkl6YkROaGVERm5jMlYzWVdZMmFtazVOM0ZtTjNOMmJXMHpPQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjc0WiIsInB1ciI6ImJsb2Jfa2V5In19--df8865b3f25cf684577760ff2b802c7098fb9309/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMkl6YkROaGVERm5jMlYzWVdZMmFtazVOM0ZtTjNOMmJXMHpPQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjc0WiIsInB1ciI6ImJsb2Jfa2V5In19--df8865b3f25cf684577760ff2b802c7098fb9309/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Completed 302 Found in 62ms (ActiveRecord: 3.5ms | Allocations: 16313)
+
+
+[36m  Disk Storage (47.7ms) [0m[34mGenerated URL for file at key: 69o99rt2rrf7qhjd5jj5yjbqrebk (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOamx2T1RseWRESnljbVkzY1docVpEVnFhalY1YW1KeGNtVmlhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjgzWiIsInB1ciI6ImJsb2Jfa2V5In19--f193d1c9e0de0074c5a1c94057bde951b7078645/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOamx2T1RseWRESnljbVkzY1docVpEVnFhalY1YW1KeGNtVmlhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjgzWiIsInB1ciI6ImJsb2Jfa2V5In19--f193d1c9e0de0074c5a1c94057bde951b7078645/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Completed 302 Found in 66ms (ActiveRecord: 9.0ms | Allocations: 16709)
+
+
+[36m  Disk Storage (68.6ms) [0m[34mGenerated URL for file at key: 6z23v7f241t2s1rmwjkb8yjezq49 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObm95TTNZM1pqSTBNWFF5Y3pGeWJYZHFhMkk0ZVdwbGVuRTBPUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjkyWiIsInB1ciI6ImJsb2Jfa2V5In19--22daf02ade9a7459bc57995a84dba599fef939f5/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObm95TTNZM1pqSTBNWFF5Y3pGeWJYZHFhMkk0ZVdwbGVuRTBPUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjkyWiIsInB1ciI6ImJsb2Jfa2V5In19--22daf02ade9a7459bc57995a84dba599fef939f5/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Completed 302 Found in 83ms (ActiveRecord: 6.1ms | Allocations: 20823)
+
+
+[36m  Disk Storage (57.9ms) [0m[34mGenerated URL for file at key: h8j04mk8r28b6t5q62gx7vc3niuh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQwODo1Mzo0Ni42OTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--1247b3169e7cbe179307a8abf6b947b161134f5b/logo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22logo.png%22%3B+filename%2A%3DUTF-8%27%27logo.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQwODo1Mzo0Ni42OTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--1247b3169e7cbe179307a8abf6b947b161134f5b/logo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22logo.png%22%3B+filename%2A%3DUTF-8%27%27logo.png
+Completed 302 Found in 68ms (ActiveRecord: 4.2ms | Allocations: 15576)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136dad33aede8e96b87cd74229c8bc9d224c1b94/town20191010173054.jpg" for ::1 at 2021-03-19 17:48:46 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136dad33aede8e96b87cd74229c8bc9d224c1b94", "filename"=>"town20191010173054"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 10 LIMIT 1[0m
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: 8mccx2u68h9sh8livj3vs7ojrm0g (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNzI0WiIsInB1ciI6ImJsb2Jfa2V5In19--23b315702ae60aef2065d63829859a6f88638873/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNzI0WiIsInB1ciI6ImJsb2Jfa2V5In19--23b315702ae60aef2065d63829859a6f88638873/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms | Allocations: 2127)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNemhrYjJsdWNEa3diV1ZxYjNGamNtNXlkalJ1WlhGdU0yazVkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjY2WiIsInB1ciI6ImJsb2Jfa2V5In19--6df8ac68e4f7fdd086a1dc1817addfe10f1f277e/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 17:48:46 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMkl6YkROaGVERm5jMlYzWVdZMmFtazVOM0ZtTjNOMmJXMHpPQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjc0WiIsInB1ciI6ImJsb2Jfa2V5In19--df8865b3f25cf684577760ff2b802c7098fb9309/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 17:48:46 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOamx2T1RseWRESnljbVkzY1docVpEVnFhalY1YW1KeGNtVmlhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjgzWiIsInB1ciI6ImJsb2Jfa2V5In19--f193d1c9e0de0074c5a1c94057bde951b7078645/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 17:48:46 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObm95TTNZM1pqSTBNWFF5Y3pGeWJYZHFhMkk0ZVdwbGVuRTBPUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjkyWiIsInB1ciI6ImJsb2Jfa2V5In19--22daf02ade9a7459bc57995a84dba599fef939f5/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 17:48:46 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQwODo1Mzo0Ni42OTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--1247b3169e7cbe179307a8abf6b947b161134f5b/logo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22logo.png%22%3B+filename%2A%3DUTF-8%27%27logo.png" for ::1 at 2021-03-19 17:48:46 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNemhrYjJsdWNEa3diV1ZxYjNGamNtNXlkalJ1WlhGdU0yazVkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjY2WiIsInB1ciI6ImJsb2Jfa2V5In19--6df8ac68e4f7fdd086a1dc1817addfe10f1f277e", "filename"=>"town20191010173054"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMkl6YkROaGVERm5jMlYzWVdZMmFtazVOM0ZtTjNOMmJXMHpPQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjc0WiIsInB1ciI6ImJsb2Jfa2V5In19--df8865b3f25cf684577760ff2b802c7098fb9309", "filename"=>"town20191010173054"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOamx2T1RseWRESnljbVkzY1docVpEVnFhalY1YW1KeGNtVmlhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjgzWiIsInB1ciI6ImJsb2Jfa2V5In19--f193d1c9e0de0074c5a1c94057bde951b7078645", "filename"=>"town20191010173054"}
+Completed 200 OK in 11ms (ActiveRecord: 0.0ms | Allocations: 3630)
+
+
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"logo.png\"; filename*=UTF-8''logo.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQwODo1Mzo0Ni42OTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--1247b3169e7cbe179307a8abf6b947b161134f5b", "filename"=>"logo"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 601)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObm95TTNZM1pqSTBNWFF5Y3pGeWJYZHFhMkk0ZVdwbGVuRTBPUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNjkyWiIsInB1ciI6ImJsb2Jfa2V5In19--22daf02ade9a7459bc57995a84dba599fef939f5", "filename"=>"town20191010173054"}
+Completed 200 OK in 10ms (ActiveRecord: 0.0ms | Allocations: 1765)
+
+
+Completed 200 OK in 9ms (ActiveRecord: 0.0ms | Allocations: 1065)
+
+
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 602)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNzI0WiIsInB1ciI6ImJsb2Jfa2V5In19--23b315702ae60aef2065d63829859a6f88638873/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 17:48:46 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDYuNzI0WiIsInB1ciI6ImJsb2Jfa2V5In19--23b315702ae60aef2065d63829859a6f88638873", "filename"=>"town20191010173054"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 601)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fa6bba67ce7d0c56dbe4b8c6a124b9f60ba21514/town20191010173054.jpg" for ::1 at 2021-03-19 17:48:47 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fa6bba67ce7d0c56dbe4b8c6a124b9f60ba21514", "filename"=>"town20191010173054"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+[36m  Disk Storage (1.2ms) [0m[34mGenerated URL for file at key: r64qf41sfvcmxfw8yqec0p7ozo8z (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhjalkwY1dZME1YTm1kbU50ZUdaM09IbHhaV013Y0RkdmVtODRlZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDcuMDgzWiIsInB1ciI6ImJsb2Jfa2V5In19--e9c82cf034cdbcce84855c052e2ecc54ab143fd6/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhjalkwY1dZME1YTm1kbU50ZUdaM09IbHhaV013Y0RkdmVtODRlZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDcuMDgzWiIsInB1ciI6ImJsb2Jfa2V5In19--e9c82cf034cdbcce84855c052e2ecc54ab143fd6/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms | Allocations: 2176)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhjalkwY1dZME1YTm1kbU50ZUdaM09IbHhaV013Y0RkdmVtODRlZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDcuMDgzWiIsInB1ciI6ImJsb2Jfa2V5In19--e9c82cf034cdbcce84855c052e2ecc54ab143fd6/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 17:48:47 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhjalkwY1dZME1YTm1kbU50ZUdaM09IbHhaV013Y0RkdmVtODRlZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDg6NTM6NDcuMDgzWiIsInB1ciI6ImJsb2Jfa2V5In19--e9c82cf034cdbcce84855c052e2ecc54ab143fd6", "filename"=>"town20191010173054"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 631)
+
+
+Started GET "/users/sign_out" for ::1 at 2021-03-19 17:48:51 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 1.3ms | Allocations: 3349)
+
+
+Started GET "/" for ::1 at 2021-03-19 17:48:51 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.4ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 12.3ms | Allocations: 4678)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 5705)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.9ms | Allocations: 6418)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 17:49:07 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (1.9ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 12.0ms | Allocations: 4358)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 5370)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 3.8ms | Allocations: 6078)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 17:59:30 +0900
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.9ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 24.3ms | Allocations: 4523)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 39.0ms | Allocations: 5891)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 3.3ms | Allocations: 7434)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:00:23 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.5ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 11.9ms | Allocations: 4523)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 5891)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.8ms | Allocations: 7434)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:05:26 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.4ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 9.6ms | Allocations: 4525)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 5895)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.5ms | Allocations: 7441)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:06:31 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (1.0ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 9.6ms | Allocations: 4525)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 5894)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.3ms | Allocations: 7439)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:06:34 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.4ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 9.2ms | Allocations: 4356)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 5367)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.9ms | Allocations: 6074)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:08:53 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.4ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 9.0ms | Allocations: 4523)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 5891)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.5ms | Allocations: 7434)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:08:56 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.4ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 8.7ms | Allocations: 4356)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 5367)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.8ms | Allocations: 6074)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:09:09 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.4ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 10.6ms | Allocations: 4356)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 5366)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.4ms | Allocations: 6072)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:09:19 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.4ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 13.0ms | Allocations: 4523)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 5891)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.0ms | Allocations: 7434)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:09:27 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.4ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 9.9ms | Allocations: 4356)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 5367)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.8ms | Allocations: 6074)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:09:33 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.4ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 8.6ms | Allocations: 4356)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 5366)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.9ms | Allocations: 6072)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:09:38 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.5ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 11.5ms | Allocations: 4356)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 5366)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.1ms | Allocations: 6072)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/prototypes/10/edit" for ::1 at 2021-03-19 18:09:39 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"id"=>"10"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 535)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-03-19 18:09:39 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.4ms | Allocations: 1059)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.0ms | Allocations: 11236)
+
+
+Started GET "/" for ::1 at 2021-03-19 18:09:40 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.4ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 9.7ms | Allocations: 4369)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 48.2ms | Allocations: 5382)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 2.1ms | Allocations: 6095)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/users/sign_up" for ::1 at 2021-03-19 18:09:49 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1316)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 10746)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-03-19 18:09:51 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 358)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 9121)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-03-19 18:09:55 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 9112)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-03-19 18:09:56 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 756)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 9465)
+
+
+Started GET "/users/sign_out" for ::1 at 2021-03-19 18:10:01 +0900
+Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 666)
+
+
+Started GET "/" for ::1 at 2021-03-19 18:10:01 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.5ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 10.3ms | Allocations: 4369)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 5380)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.8ms | Allocations: 6122)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/prototypes/10" for ::1 at 2021-03-19 18:17:26 +0900
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPrototype Load (0.6ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/prototypes_controller.rb:11:in `show'
+  Rendering prototypes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/prototypes/show.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 10 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/show.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/prototypes/show.html.erb:17
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`prototype_id` = 10[0m
+  ↳ app/views/prototypes/show.html.erb:50
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  Rendered prototypes/show.html.erb within layouts/application (Duration: 34.6ms | Allocations: 7868)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 71.2ms | ActiveRecord: 10.8ms | Allocations: 25010)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136dad33aede8e96b87cd74229c8bc9d224c1b94/town20191010173054.jpg" for ::1 at 2021-03-19 18:17:26 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136dad33aede8e96b87cd74229c8bc9d224c1b94", "filename"=>"town20191010173054"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 10 LIMIT 1[0m
+[36m  Disk Storage (2.0ms) [0m[34mGenerated URL for file at key: 8mccx2u68h9sh8livj3vs7ojrm0g (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDk6MjI6MjYuMjgwWiIsInB1ciI6ImJsb2Jfa2V5In19--dc1e410d97c3497fa3ea46a345b8ffcdfebdae80/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDk6MjI6MjYuMjgwWiIsInB1ciI6ImJsb2Jfa2V5In19--dc1e410d97c3497fa3ea46a345b8ffcdfebdae80/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms | Allocations: 2116)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDk6MjI6MjYuMjgwWiIsInB1ciI6ImJsb2Jfa2V5In19--dc1e410d97c3497fa3ea46a345b8ffcdfebdae80/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:17:26 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMDk6MjI6MjYuMjgwWiIsInB1ciI6ImJsb2Jfa2V5In19--dc1e410d97c3497fa3ea46a345b8ffcdfebdae80", "filename"=>"town20191010173054"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 625)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-03-19 18:17:37 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 611)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.0ms | Allocations: 10409)
+
+
+Started POST "/users/sign_in" for ::1 at 2021-03-19 18:17:50 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"RGX0QYQ4vnOodPFTb3ptfi0WFbNHBQQm1wFDTYnywIghbqs/2MG9beFcuveNpSLXV9IQDZ+FoN5LbZd2wOKKFQ==", "user"=>{"email"=>"test@com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/prototypes/10/edit
+Completed 302 Found in 481ms (ActiveRecord: 3.6ms | Allocations: 4761)
+
+
+Started GET "/prototypes/10/edit" for ::1 at 2021-03-19 18:17:50 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mPrototype Load (0.5ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/prototypes_controller.rb:30:in `edit'
+  Rendering prototypes/edit.html.erb within layouts/application
+  Rendered prototypes/_form.html.erb (Duration: 5.4ms | Allocations: 952)
+  Rendered prototypes/edit.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1286)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 29.7ms | ActiveRecord: 1.0ms | Allocations: 11927)
+
+
+Started GET "/users/sign_out" for ::1 at 2021-03-19 18:17:54 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 1.0ms | Allocations: 2457)
+
+
+Started GET "/" for ::1 at 2021-03-19 18:17:54 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.5ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 11.1ms | Allocations: 4522)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 5892)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.9ms | Allocations: 6728)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/prototypes/10/edit" for ::1 at 2021-03-19 18:18:02 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"id"=>"10"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 527)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-03-19 18:18:02 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 362)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 9102)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-03-19 18:18:46 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 351)
+[Webpacker] Compiling...
+Started GET "/users/sign_up" for ::1 at 2021-03-19 18:18:48 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1197)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/hoshiohikaru/projects/protospace-34853/public/packs
+[Webpacker] Hash: f6768e101a8095a1af57
+Version: webpack 4.46.0
+Time: 2192ms
+Built at: 2021/03/19 18:18:54
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f81bdffad46a0cf6aed5.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-f81bdffad46a0cf6aed5.js.map   80.3 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f81bdffad46a0cf6aed5.js js/application-f81bdffad46a0cf6aed5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 751 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 2 hidden modules
+
+[Webpacker] Compiled all packs in /Users/hoshiohikaru/projects/protospace-34853/public/packs
+[Webpacker] Hash: f6768e101a8095a1af57
+Version: webpack 4.46.0
+Time: 2698ms
+Built at: 2021/03/19 18:18:54
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f81bdffad46a0cf6aed5.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-f81bdffad46a0cf6aed5.js.map   80.3 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f81bdffad46a0cf6aed5.js js/application-f81bdffad46a0cf6aed5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 751 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 2 hidden modules
+
+Completed 200 OK in 5825ms (Views: 5820.9ms | ActiveRecord: 0.0ms | Allocations: 12582)
+
+
+Completed 200 OK in 7584ms (Views: 7581.3ms | ActiveRecord: 0.0ms | Allocations: 24577)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-03-19 18:18:58 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 756)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 9451)
+
+
+Started POST "/users" for ::1 at 2021-03-19 18:19:27 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"5iILUMPpy+F1idzv8zpyp7ZFjEAh96TfxtNgOFvr0RNY9OnD1pYR1nv0nVE4QeTDjZAFjbZ0tGAA4q4FjIpWsg==", "user"=>{"email"=>"a@a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"testtest", "profile"=>"test", "occupation"=>"test", "position"=>"test"}, "commit"=>"新規登録"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (5.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'a@a' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 460ms (ActiveRecord: 5.9ms | Allocations: 9035)
+
+
+  
+NoMethodError (undefined method `profiley' for #<User:0x00007fda63b548a8>
+Did you mean?  profile
+               profile?
+               profile=):
+  
+activemodel (6.0.3.5) lib/active_model/attribute_methods.rb:432:in `method_missing'
+activemodel (6.0.3.5) lib/active_model/validator.rb:150:in `block in validate'
+activemodel (6.0.3.5) lib/active_model/validator.rb:149:in `each'
+activemodel (6.0.3.5) lib/active_model/validator.rb:149:in `validate'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:200:in `block (2 levels) in halting'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:605:in `block (2 levels) in default_terminator'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:604:in `catch'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:604:in `block in default_terminator'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:201:in `block in halting'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:134:in `run_callbacks'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:825:in `_run_validate_callbacks'
+activemodel (6.0.3.5) lib/active_model/validations.rb:406:in `run_validations!'
+activemodel (6.0.3.5) lib/active_model/validations/callbacks.rb:117:in `block in run_validations!'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:135:in `run_callbacks'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:825:in `_run_validation_callbacks'
+activemodel (6.0.3.5) lib/active_model/validations/callbacks.rb:117:in `run_validations!'
+activemodel (6.0.3.5) lib/active_model/validations.rb:337:in `valid?'
+activerecord (6.0.3.5) lib/active_record/validations.rb:68:in `valid?'
+activerecord (6.0.3.5) lib/active_record/validations.rb:84:in `perform_validations'
+activerecord (6.0.3.5) lib/active_record/validations.rb:47:in `save'
+activerecord (6.0.3.5) lib/active_record/transactions.rb:314:in `block in save'
+activerecord (6.0.3.5) lib/active_record/transactions.rb:375:in `block in with_transaction_returning_status'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/abstract/database_statements.rb:280:in `block in transaction'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/abstract/transaction.rb:280:in `block in within_new_transaction'
+activesupport (6.0.3.5) lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+activesupport (6.0.3.5) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (6.0.3.5) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (6.0.3.5) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (6.0.3.5) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/abstract/transaction.rb:278:in `within_new_transaction'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/abstract/database_statements.rb:280:in `transaction'
+activerecord (6.0.3.5) lib/active_record/transactions.rb:212:in `transaction'
+activerecord (6.0.3.5) lib/active_record/transactions.rb:366:in `with_transaction_returning_status'
+activerecord (6.0.3.5) lib/active_record/transactions.rb:314:in `save'
+activerecord (6.0.3.5) lib/active_record/suppressor.rb:44:in `save'
+devise (4.7.3) app/controllers/devise/registrations_controller.rb:19:in `create'
+actionpack (6.0.3.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.5) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.5) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.5) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.5) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.5) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.5) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.5) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.5) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.5) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.5) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.5) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.5) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.5) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (6.0.3.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (6.0.3.5) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.5) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.5) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.5) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.5) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.5) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2021-03-19 18:20:47 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"5iILUMPpy+F1idzv8zpyp7ZFjEAh96TfxtNgOFvr0RNY9OnD1pYR1nv0nVE4QeTDjZAFjbZ0tGAA4q4FjIpWsg==", "user"=>{"email"=>"a@a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"testtest", "profile"=>"test", "occupation"=>"test", "position"=>"test"}, "commit"=>"新規登録"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'a@a' LIMIT 1[0m
+  [1m[36mUser Create (5.6ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `name`, `profile`, `occupation`, `position`, `created_at`, `updated_at`) VALUES ('a@a', '$2a$12$Qel7G9w42QuOqDw8NE.GLegrfvRQq08oRL7hdNrJrHr2IzXnY.vMy', 'testtest', 'test', 'test', 'test', '2021-03-19 09:20:47.820048', '2021-03-19 09:20:47.820048')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/prototypes/10/edit
+Completed 302 Found in 487ms (ActiveRecord: 19.2ms | Allocations: 16911)
+
+
+Started GET "/prototypes/10/edit" for ::1 at 2021-03-19 18:20:47 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mPrototype Load (0.5ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/prototypes_controller.rb:30:in `edit'
+  Rendering prototypes/edit.html.erb within layouts/application
+  Rendered prototypes/_form.html.erb (Duration: 1.9ms | Allocations: 601)
+  Rendered prototypes/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 672)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-03-19 18:20:51 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/prototypes/index.html.erb:5
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2263)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms | Allocations: 2981)
+
+
+  
+ActionView::Template::Error (undefined method `user' for nil:NilClass
+Did you mean?  super):
+    4:       <div class="greeting">
+    5:        <% if user_signed_in? %>
+    6:        <%= "こんにちは" %>
+    7:         <%= link_to current_user.name, user_path(@prototype.user),method: :get, class: :greeting__link%>
+    8:       </div>
+    9:       <% end %>
+   10:     <%# // ログインしているときは上記を表示する %>
+  
+app/views/prototypes/index.html.erb:7
+[Webpacker] Compiled all packs in /Users/hoshiohikaru/projects/protospace-34853/public/packs
+[Webpacker] Hash: ef270c56fa66020c9089
+Version: webpack 4.46.0
+Time: 1820ms
+Built at: 2021/03/19 18:20:53
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e88c6c3304a15e6886b6.js    124 KiB  application  [emitted] [immutable]  application
+js/application-e88c6c3304a15e6886b6.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e88c6c3304a15e6886b6.js js/application-e88c6c3304a15e6886b6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 5464ms (Views: 5435.6ms | ActiveRecord: 7.4ms | Allocations: 366366)
+
+
+Started GET "/prototypes/10/edit" for ::1 at 2021-03-19 18:36:37 +0900
+  [1m[35m (13.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PrototypesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (16.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mPrototype Load (0.6ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/prototypes_controller.rb:30:in `edit'
+  Rendering prototypes/edit.html.erb within layouts/application
+  Rendered prototypes/_form.html.erb (Duration: 7.6ms | Allocations: 537)
+  Rendered prototypes/edit.html.erb within layouts/application (Duration: 10.2ms | Allocations: 608)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 56.5ms | ActiveRecord: 17.4ms | Allocations: 11129)
+
+
+Started GET "/users/sign_out" for ::1 at 2021-03-19 18:36:49 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.4ms | Allocations: 2716)
+
+
+Started GET "/" for ::1 at 2021-03-19 18:36:49 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (3.7ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (7.8ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 85.8ms | Allocations: 19650)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 92.8ms | Allocations: 20666)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 32.7ms | Allocations: 21387)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/prototypes/10/edit" for ::1 at 2021-03-19 18:36:58 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"id"=>"10"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 548)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-03-19 18:36:58 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 365)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 9254)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-03-19 18:37:00 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 768)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 9482)
+
+
+Started POST "/users" for ::1 at 2021-03-19 18:37:24 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"2KnU/NudgTVhxoW7X2/88gOwyYFNMQ7p32eHnixF+/9jB8PBSd9//JcfaJtnwbmr4/kWA8q33P+V73pVo7YZoA==", "user"=>{"email"=>"test@tech", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"ji", "profile"=>"d", "occupation"=>"w", "position"=>"q"}, "commit"=>"新規登録"}
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (3.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'test@tech' LIMIT 1[0m
+  [1m[36mUser Create (8.7ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `name`, `profile`, `occupation`, `position`, `created_at`, `updated_at`) VALUES ('test@tech', '$2a$12$EH.ZiSjsaOzpkCHZ0Cs1wuSfYrs1O5El7BhKwb8yb8kYN171jQ8m.', 'ji', 'd', 'w', 'q', '2021-03-19 09:37:24.944774', '2021-03-19 09:37:24.944774')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/prototypes/10/edit
+Completed 302 Found in 259ms (ActiveRecord: 16.2ms | Allocations: 7561)
+
+
+Started GET "/prototypes/10/edit" for ::1 at 2021-03-19 18:37:24 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mPrototype Load (0.1ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/prototypes_controller.rb:30:in `edit'
+  Rendering prototypes/edit.html.erb within layouts/application
+  Rendered prototypes/_form.html.erb (Duration: 0.7ms | Allocations: 537)
+  Rendered prototypes/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 608)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 11129)
+
+
+Started GET "/users/sign_out" for ::1 at 2021-03-19 18:37:27 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 8 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 2445)
+
+
+Started GET "/" for ::1 at 2021-03-19 18:37:27 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.3ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 7.0ms | Allocations: 4356)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 5368)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.5ms | Allocations: 6081)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/prototypes/10/edit" for ::1 at 2021-03-19 18:38:47 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PrototypesController#edit as HTML
+  Parameters: {"id"=>"10"}
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms | Allocations: 1557)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-03-19 18:38:47 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1198)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1368ms (Views: 1333.6ms | ActiveRecord: 7.5ms | Allocations: 1447052)
+
+
+Started POST "/users/sign_in" for ::1 at 2021-03-19 18:46:19 +0900
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"NDIlCU6gzdd/zu0G/vd7DrCWU8x0Ium0vAyycK0DpJIA1gZ+VsolM7kQJkr288mljJde+0+ohf2iBUFUD5ADBQ==", "user"=>{"email"=>"test@com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/prototypes/10/edit
+Completed 302 Found in 240ms (ActiveRecord: 0.7ms | Allocations: 5555)
+
+
+Started GET "/prototypes/10/edit" for ::1 at 2021-03-19 18:46:19 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mPrototype Load (0.3ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/prototypes_controller.rb:30:in `edit'
+  Rendering prototypes/edit.html.erb within layouts/application
+  Rendered prototypes/_form.html.erb (Duration: 4.4ms | Allocations: 1051)
+  Rendered prototypes/edit.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1395)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 27.9ms | ActiveRecord: 6.8ms | Allocations: 19954)
+
+
+Started GET "/users/sign_out" for ::1 at 2021-03-19 18:46:23 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms | Allocations: 3027)
+
+
+Started GET "/" for ::1 at 2021-03-19 18:46:23 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.3ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 64.3ms | Allocations: 23153)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 67.7ms | Allocations: 24543)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 12.1ms | Allocations: 25400)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :class=>:card__user, :controller=>"users", :id=>nil, :method=>:get}, possible unmatched constraints: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user, method: :get, class: :card__user)  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/users/sign_out" for ::1 at 2021-03-19 18:50:41 +0900
+Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 662)
+
+
+Started GET "/" for ::1 at 2021-03-19 18:50:41 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (5.7ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 11.5ms | Allocations: 4868)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 25.2ms | Allocations: 6378)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 6.8ms | Allocations: 7930)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user.id), method: :get, class: :card__user  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:50:53 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.3ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 37.3ms | Allocations: 4508)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 40.5ms | Allocations: 5876)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 1.5ms | Allocations: 7419)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(current_user), method: :get, class: :card__user  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started PUT "/__web_console/repl_sessions/128b8cb94f76f4f0ee1d02b88cae420d" for ::1 at 2021-03-19 18:51:06 +0900
+Started PUT "/__web_console/repl_sessions/128b8cb94f76f4f0ee1d02b88cae420d" for ::1 at 2021-03-19 18:51:12 +0900
+Started PUT "/__web_console/repl_sessions/128b8cb94f76f4f0ee1d02b88cae420d" for ::1 at 2021-03-19 18:51:20 +0900
+Started GET "/" for ::1 at 2021-03-19 18:55:48 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.3ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 7.1ms | Allocations: 4818)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 6191)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.2ms | Allocations: 7734)
+
+
+  
+ActionView::Template::Error (undefined method `user' for nil:NilClass
+Did you mean?  super):
+     5:     <p class="card__summary">
+     6:       <%= prototype.catch_copy %>
+     7:     </p>
+     8:      <%= link_to "by  #{prototype.user.name}", user_path(@prototype.user), method: :get, class: :card__user  %>
+     9:   </div>
+    10: </div>
+  
+app/views/prototypes/_prototype.html.erb:8
+app/views/prototypes/index.html.erb:13
+Started GET "/" for ::1 at 2021-03-19 18:58:33 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.3ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 10 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 41.6ms | Allocations: 21852)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 45.6ms | Allocations: 23226)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 58.9ms | ActiveRecord: 6.0ms | Allocations: 32927)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--17bd570180227329951bbb487d278df05ebf69af/logo.png" for ::1 at 2021-03-19 18:58:33 +0900
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c280b17b47ccce046f3967c4fb77ba8ca1115afc/town20191010173054.jpg" for ::1 at 2021-03-19 18:58:33 +0900
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--81b1fdf98f5f90c4c76ce5de2609ca38ff43310e/town20191010173054.jpg" for ::1 at 2021-03-19 18:58:33 +0900
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75a4bf946c8be06a114923b0d18da18cf524389d/town20191010173054.jpg" for ::1 at 2021-03-19 18:58:33 +0900
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fa6bba67ce7d0c56dbe4b8c6a124b9f60ba21514/town20191010173054.jpg" for ::1 at 2021-03-19 18:58:33 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ActiveStorage::BlobsController#show as PNG
+Processing by ActiveStorage::BlobsController#show as JPEG
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--17bd570180227329951bbb487d278df05ebf69af", "filename"=>"logo"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fa6bba67ce7d0c56dbe4b8c6a124b9f60ba21514", "filename"=>"town20191010173054"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--81b1fdf98f5f90c4c76ce5de2609ca38ff43310e", "filename"=>"town20191010173054"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75a4bf946c8be06a114923b0d18da18cf524389d", "filename"=>"town20191010173054"}
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+[36m  Disk Storage (3.1ms) [0m[34mGenerated URL for file at key: r64qf41sfvcmxfw8yqec0p7ozo8z (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhjalkwY1dZME1YTm1kbU50ZUdaM09IbHhaV013Y0RkdmVtODRlZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDAzWiIsInB1ciI6ImJsb2Jfa2V5In19--1ac2632f478aed5c7899647294b992ef64bc3011/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: 38doinp90mejoqcrnrv4neqn3i9t (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNemhrYjJsdWNEa3diV1ZxYjNGamNtNXlkalJ1WlhGdU0yazVkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA3WiIsInB1ciI6ImJsb2Jfa2V5In19--ae8c0d62a36912619d4edba0d36ab58a7a03712a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+  [1m[36mActiveStorage::Blob Load (4.9ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 7 LIMIT 1[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhjalkwY1dZME1YTm1kbU50ZUdaM09IbHhaV013Y0RkdmVtODRlZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDAzWiIsInB1ciI6ImJsb2Jfa2V5In19--1ac2632f478aed5c7899647294b992ef64bc3011/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: 7b3l3ax1gsewaf6ji97qf7svmm38 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMkl6YkROaGVERm5jMlYzWVdZMmFtazVOM0ZtTjNOMmJXMHpPQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA4WiIsInB1ciI6ImJsb2Jfa2V5In19--8f09c4d1cb4d72b0cd48981038a7c96a0ef5d62a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNemhrYjJsdWNEa3diV1ZxYjNGamNtNXlkalJ1WlhGdU0yazVkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA3WiIsInB1ciI6ImJsb2Jfa2V5In19--ae8c0d62a36912619d4edba0d36ab58a7a03712a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Completed 302 Found in 10ms (ActiveRecord: 1.1ms | Allocations: 6529)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMkl6YkROaGVERm5jMlYzWVdZMmFtazVOM0ZtTjNOMmJXMHpPQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA4WiIsInB1ciI6ImJsb2Jfa2V5In19--8f09c4d1cb4d72b0cd48981038a7c96a0ef5d62a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Completed 302 Found in 9ms (ActiveRecord: 1.2ms | Allocations: 5998)
+
+
+Completed 302 Found in 9ms (ActiveRecord: 4.9ms | Allocations: 5743)
+
+
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c280b17b47ccce046f3967c4fb77ba8ca1115afc", "filename"=>"town20191010173054"}
+  [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: h8j04mk8r28b6t5q62gx7vc3niuh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQxMDowMzozNC4wMTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--c559ad6b6aa4bce210be3e6867a34998740b16ec/logo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22logo.png%22%3B+filename%2A%3DUTF-8%27%27logo.png)[0m
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136dad33aede8e96b87cd74229c8bc9d224c1b94/town20191010173054.jpg" for ::1 at 2021-03-19 18:58:34 +0900
+  [1m[36mActiveStorage::Blob Load (3.6ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 8 LIMIT 1[0m
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNemhrYjJsdWNEa3diV1ZxYjNGamNtNXlkalJ1WlhGdU0yazVkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA3WiIsInB1ciI6ImJsb2Jfa2V5In19--ae8c0d62a36912619d4edba0d36ab58a7a03712a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:58:34 +0900
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: 6z23v7f241t2s1rmwjkb8yjezq49 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObm95TTNZM1pqSTBNWFF5Y3pGeWJYZHFhMkk0ZVdwbGVuRTBPUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDIwWiIsInB1ciI6ImJsb2Jfa2V5In19--53f3177ba9b795fac66c678e8f4c229e03789f4b/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObm95TTNZM1pqSTBNWFF5Y3pGeWJYZHFhMkk0ZVdwbGVuRTBPUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDIwWiIsInB1ciI6ImJsb2Jfa2V5In19--53f3177ba9b795fac66c678e8f4c229e03789f4b/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQxMDowMzozNC4wMTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--c559ad6b6aa4bce210be3e6867a34998740b16ec/logo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22logo.png%22%3B+filename%2A%3DUTF-8%27%27logo.png
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhjalkwY1dZME1YTm1kbU50ZUdaM09IbHhaV013Y0RkdmVtODRlZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDAzWiIsInB1ciI6ImJsb2Jfa2V5In19--1ac2632f478aed5c7899647294b992ef64bc3011/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:58:34 +0900
+Completed 302 Found in 10ms (ActiveRecord: 3.6ms | Allocations: 5719)
+
+
+Completed 302 Found in 25ms (ActiveRecord: 1.4ms | Allocations: 14561)
+
+
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136dad33aede8e96b87cd74229c8bc9d224c1b94", "filename"=>"town20191010173054"}
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 10 LIMIT 1[0m
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMkl6YkROaGVERm5jMlYzWVdZMmFtazVOM0ZtTjNOMmJXMHpPQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA4WiIsInB1ciI6ImJsb2Jfa2V5In19--8f09c4d1cb4d72b0cd48981038a7c96a0ef5d62a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:58:34 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObm95TTNZM1pqSTBNWFF5Y3pGeWJYZHFhMkk0ZVdwbGVuRTBPUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDIwWiIsInB1ciI6ImJsb2Jfa2V5In19--53f3177ba9b795fac66c678e8f4c229e03789f4b/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:58:34 +0900
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: 8mccx2u68h9sh8livj3vs7ojrm0g (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--e5e7e7c8d186a42436107bb6e54b7dfdb17ef14a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--e5e7e7c8d186a42436107bb6e54b7dfdb17ef14a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms | Allocations: 3699)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNemhrYjJsdWNEa3diV1ZxYjNGamNtNXlkalJ1WlhGdU0yazVkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA3WiIsInB1ciI6ImJsb2Jfa2V5In19--ae8c0d62a36912619d4edba0d36ab58a7a03712a", "filename"=>"town20191010173054"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 653)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQxMDowMzozNC4wMTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--c559ad6b6aa4bce210be3e6867a34998740b16ec/logo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22logo.png%22%3B+filename%2A%3DUTF-8%27%27logo.png" for ::1 at 2021-03-19 18:58:34 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhjalkwY1dZME1YTm1kbU50ZUdaM09IbHhaV013Y0RkdmVtODRlZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDAzWiIsInB1ciI6ImJsb2Jfa2V5In19--1ac2632f478aed5c7899647294b992ef64bc3011", "filename"=>"town20191010173054"}
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMkl6YkROaGVERm5jMlYzWVdZMmFtazVOM0ZtTjNOMmJXMHpPQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA4WiIsInB1ciI6ImJsb2Jfa2V5In19--8f09c4d1cb4d72b0cd48981038a7c96a0ef5d62a", "filename"=>"town20191010173054"}
+Processing by ActiveStorage::DiskController#show as JPEG
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--e5e7e7c8d186a42436107bb6e54b7dfdb17ef14a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:58:34 +0900
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 717)
+
+
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1190)
+
+
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObm95TTNZM1pqSTBNWFF5Y3pGeWJYZHFhMkk0ZVdwbGVuRTBPUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDIwWiIsInB1ciI6ImJsb2Jfa2V5In19--53f3177ba9b795fac66c678e8f4c229e03789f4b", "filename"=>"town20191010173054"}
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"logo.png\"; filename*=UTF-8''logo.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQxMDowMzozNC4wMTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--c559ad6b6aa4bce210be3e6867a34998740b16ec", "filename"=>"logo"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 641)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 1617)
+
+
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--e5e7e7c8d186a42436107bb6e54b7dfdb17ef14a", "filename"=>"town20191010173054"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 590)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20752dd68201d4bb6d3cf0cba86221024f66e8c3/town20191010173054.jpg" for ::1 at 2021-03-19 18:58:34 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20752dd68201d4bb6d3cf0cba86221024f66e8c3", "filename"=>"town20191010173054"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 9 LIMIT 1[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: 69o99rt2rrf7qhjd5jj5yjbqrebk (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOamx2T1RseWRESnljbVkzY1docVpEVnFhalY1YW1KeGNtVmlhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMjY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d11623ee5ed300ba2b4c5c8f818ab7fe853f8144/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOamx2T1RseWRESnljbVkzY1docVpEVnFhalY1YW1KeGNtVmlhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMjY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d11623ee5ed300ba2b4c5c8f818ab7fe853f8144/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 2163)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOamx2T1RseWRESnljbVkzY1docVpEVnFhalY1YW1KeGNtVmlhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMjY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d11623ee5ed300ba2b4c5c8f818ab7fe853f8144/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:58:34 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOamx2T1RseWRESnljbVkzY1docVpEVnFhalY1YW1KeGNtVmlhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMjY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d11623ee5ed300ba2b4c5c8f818ab7fe853f8144", "filename"=>"town20191010173054"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 614)
+
+
+Started GET "/prototypes/1" for ::1 at 2021-03-19 18:58:39 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"authenticity_token"=>"RKeuFLjpzGkqLj+GNEKoxiv3YO9OILh+eH8zrpdfqBqckDUvimDKE/t/dx0oJAUUCeMtLSdY93z/QtsFXHgOdg==", "id"=>"1"}
+  [1m[36mPrototype Load (0.4ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/prototypes_controller.rb:11:in `show'
+  Rendering prototypes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/show.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/show.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/show.html.erb:17
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`prototype_id` = 1[0m
+  ↳ app/views/prototypes/show.html.erb:50
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  Rendered prototypes/show.html.erb within layouts/application (Duration: 34.5ms | Allocations: 22141)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 43.0ms | ActiveRecord: 8.8ms | Allocations: 37297)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQxMDowMzozNC4wMTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--c559ad6b6aa4bce210be3e6867a34998740b16ec/logo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22logo.png%22%3B+filename%2A%3DUTF-8%27%27logo.png" for ::1 at 2021-03-19 18:58:39 +0900
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"logo.png\"; filename*=UTF-8''logo.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQxMDowMzozNC4wMTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--c559ad6b6aa4bce210be3e6867a34998740b16ec", "filename"=>"logo"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 588)
+
+
+Started GET "/prototypes/10" for ::1 at 2021-03-19 18:58:50 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"authenticity_token"=>"RKeuFLjpzGkqLj+GNEKoxiv3YO9OILh+eH8zrpdfqBqckDUvimDKE/t/dx0oJAUUCeMtLSdY93z/QtsFXHgOdg==", "id"=>"10"}
+  [1m[36mPrototype Load (0.3ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/prototypes_controller.rb:11:in `show'
+  Rendering prototypes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/prototypes/show.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 10 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/show.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/prototypes/show.html.erb:17
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`prototype_id` = 10[0m
+  ↳ app/views/prototypes/show.html.erb:50
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/prototypes/show.html.erb:53
+  Rendered prototypes/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 4747)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 1.2ms | Allocations: 13811)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--e5e7e7c8d186a42436107bb6e54b7dfdb17ef14a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:58:50 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPRzFqWTNneWRUWTRhRGx6YURoc2FYWnFNM1p6TjI5cWNtMHdad1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--e5e7e7c8d186a42436107bb6e54b7dfdb17ef14a", "filename"=>"town20191010173054"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 586)
+
+
+Started GET "/" for ::1 at 2021-03-19 18:59:14 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mPrototype Load (0.7ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes`[0m
+  ↳ app/views/prototypes/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (2.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 10 AND `active_storage_attachments`.`record_type` = 'Prototype' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/prototypes/_prototype.html.erb:8
+  Rendered collection of prototypes/_prototype.html.erb [7 times] (Duration: 50.9ms | Allocations: 21845)
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 55.7ms | Allocations: 23216)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 61.1ms | ActiveRecord: 8.9ms | Allocations: 31813)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNemhrYjJsdWNEa3diV1ZxYjNGamNtNXlkalJ1WlhGdU0yazVkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA3WiIsInB1ciI6ImJsb2Jfa2V5In19--ae8c0d62a36912619d4edba0d36ab58a7a03712a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:59:14 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMkl6YkROaGVERm5jMlYzWVdZMmFtazVOM0ZtTjNOMmJXMHpPQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA4WiIsInB1ciI6ImJsb2Jfa2V5In19--8f09c4d1cb4d72b0cd48981038a7c96a0ef5d62a/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:59:14 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObm95TTNZM1pqSTBNWFF5Y3pGeWJYZHFhMkk0ZVdwbGVuRTBPUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDIwWiIsInB1ciI6ImJsb2Jfa2V5In19--53f3177ba9b795fac66c678e8f4c229e03789f4b/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:59:14 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhjalkwY1dZME1YTm1kbU50ZUdaM09IbHhaV013Y0RkdmVtODRlZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDAzWiIsInB1ciI6ImJsb2Jfa2V5In19--1ac2632f478aed5c7899647294b992ef64bc3011/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:59:14 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQxMDowMzozNC4wMTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--c559ad6b6aa4bce210be3e6867a34998740b16ec/logo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22logo.png%22%3B+filename%2A%3DUTF-8%27%27logo.png" for ::1 at 2021-03-19 18:59:14 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMkl6YkROaGVERm5jMlYzWVdZMmFtazVOM0ZtTjNOMmJXMHpPQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA4WiIsInB1ciI6ImJsb2Jfa2V5In19--8f09c4d1cb4d72b0cd48981038a7c96a0ef5d62a", "filename"=>"town20191010173054"}
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 607)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+Processing by ActiveStorage::DiskController#show as PNG
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"logo.png\"; filename*=UTF-8''logo.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRGhxTURSdGF6aHlNamhpTm5RMWNUWXlaM2czZG1NemJtbDFhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkc2IyZHZMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAyMS0wMy0xOVQxMDowMzozNC4wMTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--c559ad6b6aa4bce210be3e6867a34998740b16ec", "filename"=>"logo"}
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNemhrYjJsdWNEa3diV1ZxYjNGamNtNXlkalJ1WlhGdU0yazVkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDA3WiIsInB1ciI6ImJsb2Jfa2V5In19--ae8c0d62a36912619d4edba0d36ab58a7a03712a", "filename"=>"town20191010173054"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 597)
+
+
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhjalkwY1dZME1YTm1kbU50ZUdaM09IbHhaV013Y0RkdmVtODRlZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDAzWiIsInB1ciI6ImJsb2Jfa2V5In19--1ac2632f478aed5c7899647294b992ef64bc3011", "filename"=>"town20191010173054"}
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObm95TTNZM1pqSTBNWFF5Y3pGeWJYZHFhMkk0ZVdwbGVuRTBPUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMDIwWiIsInB1ciI6ImJsb2Jfa2V5In19--53f3177ba9b795fac66c678e8f4c229e03789f4b", "filename"=>"town20191010173054"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 609)
+
+
+Completed 304 Not Modified in 4ms (ActiveRecord: 0.0ms | Allocations: 1166)
+
+
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 637)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOamx2T1RseWRESnljbVkzY1docVpEVnFhalY1YW1KeGNtVmlhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMjY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d11623ee5ed300ba2b4c5c8f818ab7fe853f8144/town20191010173054.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22town20191010173054.jpg%22%3B+filename%2A%3DUTF-8%27%27town20191010173054.jpg" for ::1 at 2021-03-19 18:59:14 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"town20191010173054.jpg\"; filename*=UTF-8''town20191010173054.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOamx2T1RseWRESnljbVkzY1docVpEVnFhalY1YW1KeGNtVmlhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SdmQyNHlNREU1TVRBeE1ERTNNekExTkM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KM1J2ZDI0eU1ERTVNVEF4TURFM016QTFOQzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjEtMDMtMTlUMTA6MDM6MzQuMjY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d11623ee5ed300ba2b4c5c8f818ab7fe853f8144", "filename"=>"town20191010173054"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 592)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-03-22 10:32:56 +0900
+  [1m[35m (5.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 21.2ms | Allocations: 612)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 126ms (Views: 100.3ms | ActiveRecord: 0.0ms | Allocations: 10386)
+
+
+Started POST "/users/sign_in" for ::1 at 2021-03-22 10:33:02 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"lMJMHEaMFs15UnpoEoJdryrGtNQ2/GPyqDv88uGfta7RBKwMBfUR2oDjRTuT95DWuWNOCRaX9HHwCq2DHiqojw==", "user"=>{"email"=>"test@ho", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@ho' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 229ms (ActiveRecord: 1.7ms | Allocations: 4100)
+
+
+Started GET "/" for ::1 at 2021-03-22 10:33:03 +0900
+Processing by PrototypesController#index as HTML
+  Rendering prototypes/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/prototypes/index.html.erb:5
+  [1m[36mPrototype Load (0.5ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` LIMIT 11[0m
+  [1m[36mCACHE Prototype Load (0.0ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` LIMIT 11[0m
+  [1m[36mCACHE Prototype Load (0.0ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` LIMIT 11[0m
+  [1m[36mCACHE Prototype Load (0.0ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` LIMIT 11[0m
+  [1m[36mCACHE Prototype Load (0.0ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` LIMIT 11[0m
+  [1m[36mCACHE Prototype Load (0.0ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` LIMIT 11[0m
+  [1m[36mCACHE Prototype Load (0.0ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` LIMIT 11[0m
+  [1m[36mCACHE Prototype Load (0.0ms)[0m  [1m[34mSELECT `prototypes`.* FROM `prototypes` LIMIT 11[0m
+  Rendered prototypes/index.html.erb within layouts/application (Duration: 533.3ms | Allocations: 179648)
+Completed 500 Internal Server Error in 535ms (ActiveRecord: 1.8ms | Allocations: 180349)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `prototype' for #<#<Class:0x00007f946b316b20>:0x00007f946b5579c0>
+Did you mean?  @prototypes):
+    4:       <div class="greeting">
+    5:        <% if user_signed_in? %>
+    6:        <%= "こんにちは" %>
+    7:         <%= link_to current_user.name, user_path(prototype.user),method: :get, class: :greeting__link%>
+    8:       </div>
+    9:       <% end %>
+   10:     <%# // ログインしているときは上記を表示する %>
+  
+app/views/prototypes/index.html.erb:7
